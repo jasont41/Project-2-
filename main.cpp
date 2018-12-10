@@ -13,12 +13,32 @@
 
 #include <cstdlib>
 #include <iostream>
+#include "deck.h"
+#include "warGame.h"
 using namespace std;
 
+void intro() {
+    cout << "Take a minute and let me know how many games you could like to see\n";
+}
+template <class T> 
+void add(T &a){
+    a++;
+}
 /*
  * 
  */
 int main(int argc, char** argv) {
-    
+    intro();
+    int num1;
+    cout << "How many?\n";
+    cin >> num1;
+    add(num1);
+    cout << "Let's do one more, just to be sure :) \n ";
+    warGame games[num1];
+    for (int i = 0; i < num1; i++) {
+        warGame game;
+    }
+    //warGame game;
+    //deckTest.printDeck();
 }
 
